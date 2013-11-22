@@ -17,7 +17,7 @@
 #   arsenio
 
 module.exports = (robot) ->
-  robot.hear /bofh me/i, (msg)->
+  robot.respond /bofh me/i, (msg)->
     excuse = msg.random excuses
     msg.send "Your excuse: #{excuse}"
 
